@@ -1,0 +1,1071 @@
+===============================================================
+= Compiler & System info
+===============================================================
+Current CPU          : Intel(R) Xeon(R) CPU E3-1285L v3 @ 3.10GHz
+CXX Compiler ID      : Intel
+CXX Compiler Path    : /opt/intel/compilers_and_libraries_2017.0.098/linux/bin/intel64/icpc
+CXX Compiler Version : 17.0.0.20160721
+CXX Compiler Flags   : -std=c++11 -O3 -xHost -mkl=parallel -ipp -qopenmp
+OpenMP support       : ENABLED
+OS page size         : 4096 bytes
+
+======================================================================
+ = Initializing Intel IPP Library
+----------------------------------------------------------------------
+Intel IPP initialized with 4 threads.
+ippCore 2017.0.0 (r52494)
+Features supported by CPU	by IPP
+-----------------------------------------
+  ippCPUID_MMX        = Y	Y	Intel(R) Architecture MMX technology supported
+  ippCPUID_SSE        = Y	Y	Intel(R) Streaming SIMD Extensions
+  ippCPUID_SSE2       = Y	Y	Intel(R) Streaming SIMD Extensions 2
+  ippCPUID_SSE3       = Y	Y	Intel(R) Streaming SIMD Extensions 3
+  ippCPUID_SSSE3      = Y	Y	Intel(R) Supplemental Streaming SIMD Extensions 3
+  ippCPUID_MOVBE      = Y	Y	The processor supports MOVBE instruction
+  ippCPUID_SSE41      = Y	Y	Intel(R) Streaming SIMD Extensions 4.1
+  ippCPUID_SSE42      = Y	Y	Intel(R) Streaming SIMD Extensions 4.2
+  ippCPUID_AVX        = Y	Y	Intel(R) Advanced Vector Extensions instruction set
+  ippAVX_ENABLEDBYOS  = Y	Y	The operating system supports Intel(R) AVX
+  ippCPUID_AES        = Y	Y	Intel(R) AES instruction
+  ippCPUID_SHA        = N	N	Intel(R) SHA new instructions
+  ippCPUID_CLMUL      = Y	Y	PCLMULQDQ instruction
+  ippCPUID_RDRAND     = Y	Y	Read Random Number instructions
+  ippCPUID_F16C       = Y	Y	Float16 instructions
+  ippCPUID_AVX2       = Y	Y	Intel(R) Advanced Vector Extensions 2 instruction set
+  ippCPUID_AVX512F    = N	N	Intel(R) Advanced Vector Extensions 3.1 instruction set
+  ippCPUID_AVX512CD   = N	N	Intel(R) Advanced Vector Extensions CD (Conflict Detection) instruction set
+  ippCPUID_AVX512ER   = N	N	Intel(R) Advanced Vector Extensions ER instruction set
+  ippCPUID_ADCOX      = N	N	ADCX and ADOX instructions
+  ippCPUID_RDSEED     = N	N	The RDSEED instruction
+  ippCPUID_PREFETCHW  = N	N	The PREFETCHW instruction
+  ippCPUID_KNC        = N	N	Intel(R) Xeon Phi(TM) Coprocessor instruction set
+======================================================================
+
+======================================================================
+ = Initializing Intel MKL Library
+----------------------------------------------------------------------
+Intel(R) Math Kernel Library Version 2017.0.0 Product Build 20160801 for Intel(R) 64 architecture applications
+
+Setting the number of MKL threads to: 4
+======================================================================
+======================================================================
+= Initialization of the single XOR shift used for random vectors: Done
+======================================================================
+
+===================================================================================
+= Performing Grid search for Quantized Gradient Descent
+= Number of threads : 4
+= rows / cols ratio : 1.50
+= Note that this experiment, uses pure 4-bit precision
+===================================================================================
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.15 and quality parameter: 0.40
+Convergence completed for mu = 0.20 and quality parameter: 0.35
+Convergence completed for mu = 0.25 and quality parameter: 0.40
+Convergence completed for mu = 0.30 and quality parameter: 0.37
+Convergence completed for mu = 0.35 and quality parameter: 0.33
+Convergence completed for mu = 0.40 and quality parameter: 0.34
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.10 and iterations: 50
+Convergence completed for mu = 0.15 and iterations: 24
+Convergence completed for mu = 0.20 and iterations: 22
+Convergence completed for mu = 0.25 and iterations: 14
+Convergence completed for mu = 0.30 and iterations: 11
+Convergence completed for mu = 0.35 and iterations: 9
+Convergence completed for mu = 0.40 and iterations: 9
+Convergence completed for mu = 0.45 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.10 and iterations: 24
+Convergence completed for mu = 0.15 and iterations: 15
+Convergence completed for mu = 0.20 and iterations: 11
+Convergence completed for mu = 0.25 and iterations: 9
+Convergence completed for mu = 0.30 and iterations: 7
+Convergence completed for mu = 0.35 and iterations: 6
+Convergence completed for mu = 0.40 and iterations: 5
+Convergence completed for mu = 0.45 and iterations: 5
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.10 and iterations: 23
+Convergence completed for mu = 0.15 and iterations: 15
+Convergence completed for mu = 0.20 and iterations: 11
+Convergence completed for mu = 0.25 and iterations: 9
+Convergence completed for mu = 0.30 and iterations: 7
+Convergence completed for mu = 0.35 and iterations: 6
+Convergence completed for mu = 0.40 and iterations: 5
+Convergence completed for mu = 0.45 and iterations: 5
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.10 and iterations: 23
+Convergence completed for mu = 0.15 and iterations: 15
+Convergence completed for mu = 0.20 and iterations: 11
+Convergence completed for mu = 0.25 and iterations: 9
+Convergence completed for mu = 0.30 and iterations: 7
+Convergence completed for mu = 0.35 and iterations: 6
+Convergence completed for mu = 0.40 and iterations: 5
+Convergence completed for mu = 0.45 and iterations: 5
+
+Grid search complete |  4-bit | Matrix:   384 x   256 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3616652191
+Grid search complete |  8-bit | Matrix:   384 x   256 |  Iterations:           5 |  mu:       0.4000000358 |  Quality:       0.3616652191
+Grid search complete | 16-bit | Matrix:   384 x   256 |  Iterations:           5 |  mu:       0.4000000358 |  Quality:       0.3616652191
+Grid search complete | 32-bit | Matrix:   384 x   256 |  Iterations:           5 |  mu:       0.4000000358 |  Quality:       0.3616652191
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3648437262
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3565264046
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3096005619
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3372953236
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3141038120
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3116720617
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 36
+Convergence completed for mu = 0.1500000060 and iterations: 26
+Convergence completed for mu = 0.2000000030 and iterations: 18
+Convergence completed for mu = 0.2500000000 and iterations: 17
+Convergence completed for mu = 0.3000000119 and iterations: 9
+Convergence completed for mu = 0.3500000238 and iterations: 8
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 8
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 4
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 8
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 4
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 8
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 4
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix:   768 x   512 |  Iterations:           8 |  mu:       0.3500000238 |  Quality:       0.3440006375
+Grid search complete |  8-bit | Matrix:   768 x   512 |  Iterations:           4 |  mu:       0.3500000238 |  Quality:       0.3440006375
+Grid search complete | 16-bit | Matrix:   768 x   512 |  Iterations:           4 |  mu:       0.3500000238 |  Quality:       0.3440006375
+Grid search complete | 32-bit | Matrix:   768 x   512 |  Iterations:           4 |  mu:       0.3500000238 |  Quality:       0.3440006375
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3912611604
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3569010198
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3457404673
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3554348350
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3248980939
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3443237841
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 26
+Convergence completed for mu = 0.2000000030 and iterations: 21
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 14
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 14
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 14
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix:  1536 x  1024 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3609978855
+Grid search complete |  8-bit | Matrix:  1536 x  1024 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3609978855
+Grid search complete | 16-bit | Matrix:  1536 x  1024 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3609978855
+Grid search complete | 32-bit | Matrix:  1536 x  1024 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3609978855
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3474917710
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3435617387
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3394528627
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3312809765
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3244107366
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3229167461
+Convergence completed for mu = 0.4500000477 and quality parameter: 0.4613943696
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 44
+Convergence completed for mu = 0.1500000060 and iterations: 23
+Convergence completed for mu = 0.2000000030 and iterations: 15
+Convergence completed for mu = 0.2500000000 and iterations: 11
+Convergence completed for mu = 0.3000000119 and iterations: 10
+Convergence completed for mu = 0.3500000238 and iterations: 8
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 5
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 5
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 18
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 5
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 5
+
+Grid search complete |  4-bit | Matrix:  3072 x  2048 |  Iterations:           8 |  mu:       0.3500000238 |  Quality:       0.3587963879
+Grid search complete |  8-bit | Matrix:  3072 x  2048 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3587963879
+Grid search complete | 16-bit | Matrix:  3072 x  2048 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3587963879
+Grid search complete | 32-bit | Matrix:  3072 x  2048 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3587963879
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3294796944
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3296031356
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3227683008
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3011379540
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3043870330
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3146023750
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 30
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 16
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 21
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix:  6144 x  4096 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3345977366
+Grid search complete |  8-bit | Matrix:  6144 x  4096 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3345977366
+Grid search complete | 16-bit | Matrix:  6144 x  4096 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3345977366
+Grid search complete | 32-bit | Matrix:  6144 x  4096 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3345977366
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3397493660
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3361731172
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3267803490
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3163237274
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3112882674
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3197123408
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 42
+Convergence completed for mu = 0.1500000060 and iterations: 28
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix:  9216 x  6144 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3458758593
+Grid search complete |  8-bit | Matrix:  9216 x  6144 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458758593
+Grid search complete | 16-bit | Matrix:  9216 x  6144 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458758593
+Grid search complete | 32-bit | Matrix:  9216 x  6144 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458758593
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3498307168
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3407714665
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3370970488
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3246142268
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3147301674
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3228807449
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 43
+Convergence completed for mu = 0.1500000060 and iterations: 26
+Convergence completed for mu = 0.2000000030 and iterations: 18
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 12288 x  8192 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3497001827
+Grid search complete |  8-bit | Matrix: 12288 x  8192 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3497001827
+Grid search complete | 16-bit | Matrix: 12288 x  8192 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3497001827
+Grid search complete | 32-bit | Matrix: 12288 x  8192 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3497001827
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3404916227
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3262391686
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3209408522
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3159425557
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3086688519
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3142506480
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 26
+Convergence completed for mu = 0.2000000030 and iterations: 18
+Convergence completed for mu = 0.2500000000 and iterations: 13
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 15360 x 10240 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3429653943
+Grid search complete |  8-bit | Matrix: 15360 x 10240 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3429653943
+Grid search complete | 16-bit | Matrix: 15360 x 10240 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3429653943
+Grid search complete | 32-bit | Matrix: 15360 x 10240 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3429653943
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3347578347
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3295240700
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3216369450
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3166095912
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3090417683
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3150997758
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 46
+Convergence completed for mu = 0.1500000060 and iterations: 25
+Convergence completed for mu = 0.2000000030 and iterations: 18
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 8
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 18432 x 12288 |  Iterations:           8 |  mu:       0.3500000238 |  Quality:       0.3433797657
+Grid search complete |  8-bit | Matrix: 18432 x 12288 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3433797657
+Grid search complete | 16-bit | Matrix: 18432 x 12288 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3433797657
+Grid search complete | 32-bit | Matrix: 18432 x 12288 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3433797657
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3430866301
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3374459743
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3223606646
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3125714660
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3097610772
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3213031292
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 42
+Convergence completed for mu = 0.1500000060 and iterations: 25
+Convergence completed for mu = 0.2000000030 and iterations: 18
+Convergence completed for mu = 0.2500000000 and iterations: 13
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 21504 x 14336 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3441789746
+Grid search complete |  8-bit | Matrix: 21504 x 14336 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3441789746
+Grid search complete | 16-bit | Matrix: 21504 x 14336 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3441789746
+Grid search complete | 32-bit | Matrix: 21504 x 14336 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3441789746
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3359533250
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3284058273
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3203148842
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3179393709
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3097262681
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3161476254
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 29
+Convergence completed for mu = 0.2000000030 and iterations: 21
+Convergence completed for mu = 0.2500000000 and iterations: 15
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 24576 x 16384 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3441403210
+Grid search complete |  8-bit | Matrix: 24576 x 16384 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3441403210
+Grid search complete | 16-bit | Matrix: 24576 x 16384 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3441403210
+Grid search complete | 32-bit | Matrix: 24576 x 16384 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3441403210
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3419364989
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3312965930
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3179043233
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3149031997
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3081074655
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3163270652
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 29
+Convergence completed for mu = 0.2000000030 and iterations: 21
+Convergence completed for mu = 0.2500000000 and iterations: 16
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 27648 x 18432 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3423416317
+Grid search complete |  8-bit | Matrix: 27648 x 18432 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3423416317
+Grid search complete | 16-bit | Matrix: 27648 x 18432 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3423416317
+Grid search complete | 32-bit | Matrix: 27648 x 18432 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3423416317
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3350623846
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3237861693
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3141766489
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3113057017
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3172215819
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3210667074
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 49
+Convergence completed for mu = 0.1500000060 and iterations: 28
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 12
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 30720 x 20480 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3458952308
+Grid search complete |  8-bit | Matrix: 30720 x 20480 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458952308
+Grid search complete | 16-bit | Matrix: 30720 x 20480 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458952308
+Grid search complete | 32-bit | Matrix: 30720 x 20480 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3458952308
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3333333433
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3382588923
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3205981553
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3137017190
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3186585605
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3141401410
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 48
+Convergence completed for mu = 0.1500000060 and iterations: 28
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 15
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 33792 x 22528 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3485574722
+Grid search complete |  8-bit | Matrix: 33792 x 22528 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3485574722
+Grid search complete | 16-bit | Matrix: 33792 x 22528 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3485574722
+Grid search complete | 32-bit | Matrix: 33792 x 22528 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3485574722
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3391966522
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3288161755
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3220915198
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3094439507
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3118596971
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3120719492
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 48
+Convergence completed for mu = 0.1500000060 and iterations: 31
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 9
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 19
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 4
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 36864 x 24576 |  Iterations:           9 |  mu:       0.3500000238 |  Quality:       0.3438266218
+Grid search complete |  8-bit | Matrix: 36864 x 24576 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3438266218
+Grid search complete | 16-bit | Matrix: 36864 x 24576 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3438266218
+Grid search complete | 32-bit | Matrix: 36864 x 24576 |  Iterations:           4 |  mu:       0.4000000358 |  Quality:       0.3438266218
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3332784772
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3315871656
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3234372735
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3144494295
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3069944680
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3203632236
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 32
+Convergence completed for mu = 0.2000000030 and iterations: 20
+Convergence completed for mu = 0.2500000000 and iterations: 15
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 11
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 39936 x 26624 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3411049843
+Grid search complete |  8-bit | Matrix: 39936 x 26624 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3411049843
+Grid search complete | 16-bit | Matrix: 39936 x 26624 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3411049843
+Grid search complete | 32-bit | Matrix: 39936 x 26624 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3411049843
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3368350565
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3307565749
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3219241202
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3154462874
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3104600906
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3224136531
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 47
+Convergence completed for mu = 0.1500000060 and iterations: 29
+Convergence completed for mu = 0.2000000030 and iterations: 20
+Convergence completed for mu = 0.2500000000 and iterations: 14
+Convergence completed for mu = 0.3000000119 and iterations: 11
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 9
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 43008 x 28672 |  Iterations:           9 |  mu:       0.4000000358 |  Quality:       0.3449556530
+Grid search complete |  8-bit | Matrix: 43008 x 28672 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3449556530
+Grid search complete | 16-bit | Matrix: 43008 x 28672 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3449556530
+Grid search complete | 32-bit | Matrix: 43008 x 28672 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3449556530
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3439327180
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3270120025
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3195388615
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3101375103
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3090532720
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3194471896
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 29
+Convergence completed for mu = 0.2000000030 and iterations: 19
+Convergence completed for mu = 0.2500000000 and iterations: 15
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 9
+Convergence completed for mu = 0.2500000000 and iterations: 7
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 46080 x 30720 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3433925211
+Grid search complete |  8-bit | Matrix: 46080 x 30720 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3433925211
+Grid search complete | 16-bit | Matrix: 46080 x 30720 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3433925211
+Grid search complete | 32-bit | Matrix: 46080 x 30720 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3433925211
+
+Looking for best possible quality  for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1500000060 and quality parameter: 0.3410573900
+Convergence completed for mu = 0.2000000030 and quality parameter: 0.3250898421
+Convergence completed for mu = 0.2500000000 and quality parameter: 0.3186780810
+Convergence completed for mu = 0.3000000119 and quality parameter: 0.3149822354
+Convergence completed for mu = 0.3500000238 and quality parameter: 0.3100132346
+Convergence completed for mu = 0.4000000358 and quality parameter: 0.3215765059
+
+Finding mu for  4-bit matrix and  4-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 50
+Convergence completed for mu = 0.1500000060 and iterations: 28
+Convergence completed for mu = 0.2000000030 and iterations: 20
+Convergence completed for mu = 0.2500000000 and iterations: 15
+Convergence completed for mu = 0.3000000119 and iterations: 12
+Convergence completed for mu = 0.3500000238 and iterations: 10
+Convergence completed for mu = 0.4000000358 and iterations: 10
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for  8-bit matrix and  8-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 16-bit matrix and 16-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Finding mu for 32-bit matrix and 32-bit vector 
+Convergence completed for mu = 0.1000000015 and iterations: 20
+Convergence completed for mu = 0.1500000060 and iterations: 13
+Convergence completed for mu = 0.2000000030 and iterations: 10
+Convergence completed for mu = 0.2500000000 and iterations: 8
+Convergence completed for mu = 0.3000000119 and iterations: 6
+Convergence completed for mu = 0.3500000238 and iterations: 5
+Convergence completed for mu = 0.4000000358 and iterations: 5
+Convergence completed for mu = 0.4500000477 and iterations: 50
+
+Grid search complete |  4-bit | Matrix: 49152 x 32768 |  Iterations:          10 |  mu:       0.3500000238 |  Quality:       0.3444591463
+Grid search complete |  8-bit | Matrix: 49152 x 32768 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3444591463
+Grid search complete | 16-bit | Matrix: 49152 x 32768 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3444591463
+Grid search complete | 32-bit | Matrix: 49152 x 32768 |  Iterations:           5 |  mu:       0.3500000238 |  Quality:       0.3444591463
+
+
+
